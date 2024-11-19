@@ -20,17 +20,17 @@
     4. [vscode 재설치] 후 왼쪽 메뉴에 [소스 제어]탭 클릭 
     5. [GitHub 게시] -> [로그인] -> 웹페이지[git]로그인 진행 -> [continue]
     6. Publish to GitHub public repository [본인아이디]/프로젝트명(최상위폴더명) --> 선택 클릭 --> [확인]
-    ---> 최초 git 사용시 : git 에서 'user.name' 및 'user.email'를 구성해야 합니다. 창이 나옵니다.
+    
+    ---> * 최초/pc변경시 git 사용시 : git 에서 'user.name' 및 'user.email'를 구성해야 합니다. 창이 나옵니다.
+
     7. [vscode 상단메뉴] -> [터미널] -> [새 터미널] -> [+]옆에 [V] 클릭 -> [git bash]
     8. 
         [ git user.name 확인 ] git config --global user.name
         [ git user.name 설정 ] git config --global user.name git아이디
         [ git user.email 확인 ] git config --global user.email 
-        [ git user.email 설정] git config --global user.email git아이디@이메일포함 
+        [ git user.email 설정] git config --global user.email git아이디@이메일포함
+
     9. [vscode 왼쪽 메뉴] 에 [소스 제어]탭 클릭 -> [메시지 입력칸 = 기록 메시지 ]
-    10. [ 커밋 및 푸시  ]
 
-
-
-
-
+    10. [ 커밋 및 푸시  ] 
+        * 만일 최초/pc변경시 git 사용이면 [ git 로그인 ]창 나오면 브라우저 로그인 처리 
