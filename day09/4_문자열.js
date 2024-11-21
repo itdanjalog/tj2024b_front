@@ -48,7 +48,7 @@ console.log( `평균 : ${ 100 + 50 } `)    // 평균 : 150
 let 직원명1 = '신동엽'
 let 직원명2 = '강호동'
 let nameHTML = `<ol> <li> ${ 직원명1 } </li> <li> ${ 직원명2 } </li> </ol>`
-// document.write( nameHTML ) // document.write() : 현재 HTML에 출력하는 함수
+document.write( nameHTML ) // document.write() : 현재 HTML에 출력하는 함수
 
 // 예1 : 입력받은 데이터를 HTML 출력하시오.
     // prompt('알람메시지') , 반환값 : 입력받은 값 1개  
@@ -56,7 +56,7 @@ let 결과2 = prompt('[알람내용] 데이터 입력해주세요')
 // prompt 함수로부터 입력받은 값을 아래 코드에서 재사용 하고 싶다.
 console.log( 결과2 )
 let inputHTML = `<h3> 입력받은 데이터 : ${ 결과2 } </h3>`
-// document.write( inputHTML ) 
+document.write( inputHTML ) 
 
 // ---- 예]
 let 결과1 = 10 + 5 * 10        // 반환값 : 두 값을 더한 값 1개 
