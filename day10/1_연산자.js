@@ -31,6 +31,7 @@
                 일반 예] let 정수 = 10 , 정수 = 정수 + 3 , 정수(13)
                 복합 연산 예 ] let 정수 = 10 , 정수 += 3 , 정수(13)
             -= , *= , /= , %= 등등
+
         6. 증(가)감(소)연산자 , 변수와 같이 사용 , 1씩증가/1씩감소 = [배열]인덱스
             ++ 1증가 , -- 1감소 
             변수++ : 후위증가  , ++변수 : 선위증가 
@@ -208,7 +209,34 @@ console.log( `[6] 결과2 : ${ 결과2 } `)
 
 
 
+// [지문9] 1차점수 와 2차점수 prompt함수로 각 입력받아서 
+//          총점이 150점이상이면 '합격' 아니면 '불합격' HTML의 <h3> 에 표시하시오.
+/*
+// (1) 입력/저장
+let point1 = Number( prompt('1차점수: ') )
+let point2 = Number( prompt('2차점수: ') )
+// (2) 연산처리
+let total = point1 + point2;
+let result = total >= 150 ? '합격' : '불합격'
+// (3) 출력
+let outHTML = `<h3> [9] 결과 : ${ result } </h3>`
+document.write( outHTML )
+*/
 
-
-
-
+// [지문10] 두 사람의 이름을 prompt함수로 각 입력받아서 
+// 만일 이름이 '유재석' 이면 뒤에 (방장) 이라고 이름 뒤에 붙이고 아니면 생략한다.
+//          ex] 유재석(방장) , 강호동 
+//          HTML의 <ol> 에 표시하시오.
+// (1) 입력/저장
+let name1 = prompt('이름1 : ')
+let name2 = prompt('이름2 : ')
+// (2) 연산 
+// 만약에 name1변수값이 '유재석' 이면 name1 값 뒤에(방장)붙이고 아니면 그대로 name1변수 값를 수정한다.
+name1 = name1 == '유재석' ? `${name1}(방장)` : name1
+name2 = name2 == '유재석' ? `${name2}(방장)` : name2
+// (3) 출력 
+let outHTML = `<ol> 
+                    <li> ${ name1 } </li> 
+                    <li> ${ name2 } </li> 
+               </ol>`
+document.write( outHTML )
