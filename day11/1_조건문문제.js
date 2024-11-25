@@ -91,8 +91,7 @@ if( 점수 >= 90 ){ console.log('[5] 결과 : A등급'); }
 else if( 점수 >= 80 ){ console.log( '[5] 결과 : B등급 '); }
 else if( 점수 >= 70 ){ console.log( '[5] 결과 : C등급 '); }
 else{ console.log('[5] 결과 : 재시험 '); }
-
-
+// - 주의할점 : if if if  vs if ~ else if ~ else if 
 
 
 /*
