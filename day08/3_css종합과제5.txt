@@ -29,3 +29,16 @@
 		- 5시40분 , 각 10분   -  알아서 선정(발표를 한번도 안했다 추천)
 		- 캔바 작업이 끝나면 캔바(읽기모드 및 초대-kgs2072@naver.com)링크 와 구현한 메인페이지 링크 카톡방에 제출 
 		- 발표 순서 : 캔바 ppt 보고 발표후 ---> 구현한 페이지 시연 
+--------------------------------------------------------------------------------------------------
+서울아산병원 , 김도하
+	- 캔바 : https://www.canva.com/design/DAGXi_vkxb8/XwN2rCQgomNvU9yzk9AUFQ/edit
+	- ip : http://192.168.40.78:5500/main.html
+대한항공 , 박희만
+	- 캔바 : https://www.canva.com/design/DAGXeL0MxDQ/beKs-Pz_5bvqPDmGYWz7Pg/edit
+	- ip : http://192.168.40.56:5500/koreanair/main_page.html
+랭킹닷컴 , 김리원
+	- 캔바 : https://www.canva.com/design/DAGW-9TXnos/RUp1Shs4kCEGwgMWcBCSfw/view?utm_content=DAGW-9TXnos&utm_campaign=designshare&utm_medium=link&utm_source=editor
+	- ip : http://192.168.40.24:5501/ranking%20-%20%ED%8C%8C%EC%9D%B4%EB%84%90/3_%EB%9E%AD%ED%82%B9%EB%8B%AD%EC%BB%B4.html
+요기요 , 이민진
+	- 캔바 : https://www.canva.com/design/DAGXjvxEr50/-UoQSa2HzONO21OUaLvsDQ/view?utm_content=DAGXjvxEr50&utm_campaign=designshare&utm_medium=link&utm_source=editor
+	- ip : http://192.168.40.68:5500/day08/3_css%EC%A2%85%ED%95%A9%EA%B3%BC%EC%A0%9C5/main.html
