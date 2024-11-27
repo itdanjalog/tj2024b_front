@@ -29,7 +29,7 @@ function 등록함수( ){ // m start
     이름명단.push( data );
     // 4. 배열에 push 이후에 출력(새로고침) 를 한다
     출력함수();
-
+    
 } // f end 
 // ---> 함수가 종료되면서 입력받은 'data'변수는 사라진다. (지역변수)
 
@@ -44,17 +44,7 @@ function 출력함수(){
     // console.log( html );
     // (3) HTML 출력 , 특정한 구역의 출력 , inner : <시작마크업> innerHTML </끝마크업>
     document.querySelector('.printBox').innerHTML = html
-    
 } // f end 
-
-
-
-
-
-
-
-
-
 
 
 
