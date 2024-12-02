@@ -7,22 +7,30 @@
     <div>
         <h3> 사원 등록 </h3>
         <form>
-            사원명 : <input type="text"/>
-            생년월일 : <input type="date" />
-            <button type="button">사원 등록</button>
+            사원명 : <input class="name" type="text"/>
+            생년월일 : <input class="birth" type="date" />
+            <button onclick="사원등록()" type="button">사원 등록</button>
         </form>
     </div>
     <div>
         <h3> 사원 목록 </h3>
         <table border="1">
-            <thead> <tr> <th> 사원명 </th> <th> 생년월일 </th></tr></thead>
-            <tbody>
+            <thead> 
+                <tr> 
+                    <th> 사원번호 </th>
+                    <th> 사원명 </th> 
+                    <th> 생년월일 </th>
+                </tr>
+            </thead>
+            <tbody class="사원테이블">
                 <tr> <td> 유재석 </td> <td> 2000-01-01 </td></tr>
                 <tr> <td> 강호동 </td> <td> 1950-02-11 </td></tr>
                 <tr> <td> 신동엽 </td> <td> 1988-03-25 </td></tr>
             </tbody>
         </table>
     </div>
+
+    
     <div>
         <h3> 사원 평가 등록 </h3>
         <form>
