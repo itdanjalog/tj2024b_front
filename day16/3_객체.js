@@ -8,6 +8,7 @@
         5. 인증키 설정 
         6. api 실행 
 */
+// [1] '부평구인구정보' 객체 정보 
 let 부평구인구정보 = {
     "currentCount": 23,
     "data": [
@@ -201,3 +202,33 @@ let 부평구인구정보 = {
     "perPage": 50,
     "totalCount": 23
   }
+console.log( 부평구인구정보 );
+console.log( 부평구인구정보.data ); // 부평구 인구정보 자료 
+
+// [2] 인구 정보 출력 
+// 1. 어디에 , document.querySelector() 
+let tbody = document.querySelector(' table > tbody')
+// 2. 무엇을 , 부평구 인구정보 자료
+let html = ``
+
+for( let index = 0 ; index <= 부평구인구정보.data.length - 1  ; index++ ){
+    // index는 0부터 부평구인구정보자료의 마지막인덱스까지 1씩 증가 반복 
+    // - index번째의 인구정보 호출 
+    let info = 부평구인구정보.data[index];
+    console.log( info )
+    // - 인구정보 자료를 html로 구성하기
+    // 변수명["속성명"] : 속성명에 특수문자가 포함된 경우 vs 변수명.속성명 
+    html += `<tr>
+                <td> ${ info.동별 } </td>
+                <td> ${ info.세대수 }</td>
+                <td> ${ info["인구수(계)"] }</td>
+                <td> ${ info["인구수(남)"] }</td>
+                <td> ${ info["인구수(여)"] } </td>
+            </tr>`
+}
+
+// 3. 출력 , innerHTML 
+tbody.innerHTML = html;
+
+
+  
