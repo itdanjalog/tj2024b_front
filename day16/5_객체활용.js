@@ -109,24 +109,8 @@ function 평가등록출력( 클릭된사원번호 ){ // 매개변수 : 클릭�
                     평가연도 : <input type="text" />
                     상반기평가 : <input type="text" />
                     하반기평가 : <input type="text"/> 
-                    <button type="button"> 점수 등록 </button>
+                    <button type="button"> 평가 등록 </button>
                 </form>`
     // 3, 출력 
     div.innerHTML = html
 } // f end 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
