@@ -70,14 +70,11 @@ function calPrint(){ // 함수의 매개변수 : X , 리턴값 : X
                     plenHtml += `<div style="color : ${ plan.color }"> ${ plan.content } </div>`
                 };
             } // for end
-            
+
             // 일 출력 + 일정내용 출력 
             html2 += `<div> ${ day } ${ plenHtml } </div>` 
-
         } // for end 
-
         calBottom.innerHTML = html2;         // - 출력
-        
     return; // [함수 종료] 함수가 종료 되면서 반환되는 값 , 값이 없을경우 return 생략이 가능 
 } // f end 
 
