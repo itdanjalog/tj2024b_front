@@ -11,6 +11,15 @@ console.log( new Date( 2023 , 4 , 20 ) ) // Sat May 20 2023 00:00:00 GMT+0900 (�
 let today = new Date(); 
 let year = today.getFullYear(); // 오늘의 연도 
 let month = today.getMonth()+1; // 오늘의 월 , +1 하는이유 : 12월이 11로 반환이 되기 때문에 
+
+// + 달력의 일정/내용
+let contentArray = [
+    { cno : 1 , content : '학원개강' , date : '2024-12-4' , color : 'red'  } , 
+    { cno : 2 , content : '은행업무' , date : '2024-12-10' , color : 'blue'  } ,
+    { cno : 3 , content : '친구약속' , date : '2024-12-10' , color : 'pink'  } ,
+    { cno : 4 , content : '월급받는날' , date : '2024-12-15' , color : 'gray'  }
+];
+
 // [1] 달력 출력함수  , 실행조건 : js가 실행될때 , 월변경될때마다
 calPrint(); // js가 실행될때 최초 1번 함수 실행 
 function calPrint(){ // 함수의 매개변수 : X , 리턴값 : X
@@ -39,17 +48,34 @@ function calPrint(){ // 함수의 매개변수 : X , 리턴값 : X
             let date2 = new Date( year , month-1 , 1 ); // -1 하는이유 : 컴퓨터는 0:1월 취급 
                 console.log( date2 ); // Sun Dec 01 2024 00:00:00 GMT+0900
             let startWeek = date2.getDay(); // 요일 , 0
-            
+
         // + 각 월의 1일 전까지 공백 출력 
         for( let blank = 1 ; blank <= startWeek ; blank++ ){
             html2 += `<div></div>`
         } // 
 
-        // + 달력의 날짜 출력 
+        // + 달력의 날짜 출력 + 현재 일정도 같이 출력 
         for( let day = 1 ; day<=endDay ; day++ ){
             // day는 1부터 현재날짜의마지막일 까지 1씩 증가 반복 
-            html2 += `<div> ${ day } </div>` 
-        } //
+            
+            // 일정 출력 
+                // 1. 현재 보고있는 날짜 형식 구성
+            let date3 = `${year}-${month}-${day}`; // 현재 반복문이 처리중인 날짜  
+                console.log( date3 );
+                // 2. 현재 날짜와 등록된 일정날짜와 동일한 일정 찾기/검색 해서 동일하면 일정내용 출력 
+            let plenHtml = ``; // for 밖에 만든 이유 : 동일한 날짜의 2개 이상의 일정이 있을수 있으므로 누적 
+            for( let index = 0 ; index <= contentArray.length-1 ; index++ ){
+                let plan = contentArray[index];
+                if( plan.date == date3 ){ // 만약에 index번째의 일정객체내 날짜가 현재 보고있는 날짜와 같으면 
+                    plenHtml += `<div style="color : ${ plan.color }"> ${ plan.content } </div>`
+                };
+            } // for end
+            
+            // 일 출력 + 일정내용 출력 
+            html2 += `<div> ${ day } ${ plenHtml } </div>` 
+
+        } // for end 
+
         calBottom.innerHTML = html2;         // - 출력
         
     return; // [함수 종료] 함수가 종료 되면서 반환되는 값 , 값이 없을경우 return 생략이 가능 
