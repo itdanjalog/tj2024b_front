@@ -51,6 +51,5 @@
     6. 리포지토리 상단 메뉴에 [ settings ] 클릭 
     7. 왼쪽 사이드 메뉴에 [Pages] 클릭 
     8. [Branch] 항목에서 
-        [None][Save] ---> [main][/root][save] 
-    9. 1~2분 기다리기 : 새로고침 -> Your site is live at https://xxxxx.github.io/xxxx
-    
+        [None] ---> [main]으로 변경후 [/root] [save]클릭 
+    9. 1~2분 기다리기 : 새로고침F5 -> Your site is live at https://xxxxx.github.io/xxxx
