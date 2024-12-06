@@ -37,33 +37,12 @@ function 타이머(){
     time++;
     document.querySelector('.box3').innerHTML = time;
 } // f end 
-
 function 타이머시작함수(){
     timerId = setInterval( 타이머 , 1000 );
 } // f end 
-
 function 타이머종료함수(){
     clearInterval( timerId )
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} // f end 
 
 
 
