@@ -35,7 +35,36 @@ function 회원가입함수( ){
         sessionStorage.setItem( 'memberList' , JSON.stringify( memberList ) )
         
     // 3. [출력]
-
     return; // 함수 종료 // 값 없을때는 생략 가능.
+} // f end 
 
+// [2] 로그인 함수 , [로그인] 버튼을 클릭했을때 
+function 로그인함수(){
+
+    // 회원가입이란 ? 입력한 정보들을 어딘가에 저장/기록  
+    // 로그인이란 ? 로그(기록)으로 들어가는것 , 기록(회원가입)과 일치한 정보 비교 해서 들어감.
+
+    let loginId = document.querySelector('.loginId').value;
+    let loginPw = document.querySelector('.loginPw').value;
+
+    let memberList = sessionStorage.getItem('memberList');
+    if( memberList == null ){
+        memberList = [] // 회원정보목록이 없으면 빈배열 생성 
+    }else{// 아니면 
+        memberList = JSON.parse( memberList ); // 회원정보목록이 존재하면 JSON타입으로 변환 
+    }
+
+    // 로그인정보 가 회원정보목록(기록)내 존재하는지 비교 
+    for( let index = 0 ; index <= memberList.length-1 ; index++ ){
+        let info = memberList[index]; // index번째의 회원정보 객체 호출 
+        if( info.id == loginId && info.pw == loginPw ){
+            console.log( info );
+            alert('로그인성공');
+            return; // 현재 함수 종료 // 아래 코드는 실행되지 않는다.  
+        }
+    } // for end 
+
+    alert('동일한 회원정보가 없습니다. 로그인실패');
+
+    return;
 } // f end 
