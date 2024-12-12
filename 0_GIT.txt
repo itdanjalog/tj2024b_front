@@ -53,3 +53,65 @@
     8. [Branch] 항목에서 
         [None] ---> [main]으로 변경후 [/root] [save]클릭 
     9. 1~2분 기다리기 : 새로고침F5 -> Your site is live at https://xxxxx.github.io/xxxx
+
+[ 로컬저장소(내PC) , 원격저장소(gitHub server) ]
+- https://github.com/itdanjalog/tj2024b_front ( 원격 저장소 ) : 깃허브 회사의 서버실에 코드 저장
+- clone(복제) : 원격 저장소로 부터 로컬 저장소로 가져오는 행위 
+- commit(완료) : 로컬 저장소로 부터 코드를 저장 행위 
+- push : 로컬 저장소로 부터 완료(commit)된 코드들을 원격으로 올리기/업로드 행위
+    - commit and push
+- PULL : 원격 저장소로 부터 상태를 다운로드 행위 
+
+--- 현재 강의에서의 gitHub 구조 
+    1. git회사PC 
+        원격저장소 : https://github.com/itdanjalog/tj2024b_front
+    2. 학원의 내PC
+        로컬저장소 : tj2024b_front
+    3. 집/노트북 내PC
+        로컬저장소 : kim/tj2024b_front
+
+[ 버전 관리 ] VCS 
+
+    12/12 13:02
+        [원격] https://github.com/itdanjalog/tj2024b_front  1.0
+        [학원로컬] tj2024b_front 1.0
+    12/12 20:02
+        저장소 복제 
+        [집로컬] kim/tj2024b_front 1.0
+    12/12 22:00
+        [집로컬] kim/tj2024b_front ---> 1.1 PUSH [원격]1.1
+    12/13 9:30
+        학원도착 , 만일 집에서 PUSH한적 있거나 저장소의 상태(버전) 변화가 있으면 
+        [학원로컬] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
