@@ -166,15 +166,16 @@
 	5. [제거]
 4. vscode 오른쪽 하단에 유저아이콘 클릭 --> git계정명 --> 로그아웃
 -----------------------------------------------------------------
+-----------------------------------------------------------------
 - 학원 자리 변경 후 
-1. vscode 실행
-2. 새창 ---> git 리포지토리 복제 
-3. 깃허브 웹로그인창 --> 로그인 
-4. 
-- vscode 터미널 ---> git bash --> commit/push git 계정 정보 변경 
-	git config --global user.name 깃아이디 
-	git config --global user.email 깃이메일
-
+	[ 프로젝트 가져오기 ]
+	    1. vscode 실행
+	    2. 새창 ---> git 리포지토리 복제 
+	    3. 깃허브 웹로그인창 --> 로그인 
+	[ commit/push git 계정 정보 변경  ]
+	- vscode 터미널 ---> git bash --> commit/push git 계정 정보 변경 
+		git config --global user.name 깃아이디 
+		git config --global user.email 깃이메일
 
 
 
